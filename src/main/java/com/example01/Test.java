@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入几个数并用逗号隔开：");
-        Scanner sc1 = new Scanner(System.in);
-        String str = sc1.next().toString();
-        String[] arr  = str.split(",");
-        int[] nums = new int[arr.length];
-        for(int j = 0; j<nums.length;j++) {
-            nums[j] = Integer.parseInt(arr[j]);
-            System.out.println(nums[j]+" ");
-        }
-//        Scanner scanner = new Scanner(System.in);
-//        int n = scanner.nextInt();
-//        System.out.println("输入数组长度为：" + n);
-//        int[] nums = new int[n];
-//        for (int i = 0; i < n; i++){
-//            nums[i]=scanner.nextInt();
+//        System.out.println("请输入几个数并用逗号隔开：");
+//        Scanner sc1 = new Scanner(System.in);
+//        String str = sc1.next().toString();
+//        String[] arr  = str.split(",");
+//        int[] nums = new int[arr.length];
+//        for(int j = 0; j<nums.length;j++) {
+//            nums[j] = Integer.parseInt(arr[j]);
+//            System.out.println(nums[j]+" ");
 //        }
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.println("输入数组长度为：" + n);
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++){
+            nums[i]=scanner.nextInt();
+        }
         int a = sc.nextInt();
         System.out.println("输入目标为：" + a);
         sc.close();
